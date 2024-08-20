@@ -1,0 +1,26 @@
+import java.sql.connection;
+import java.spl.Driver;
+import java.sql.DriverManager;
+
+public class Addname{
+    public static void main(String[] args){
+        String url="Addname:mysql://localhost:3306/Addname";
+        String username="23009522";
+        String password="24681"
+        try{
+            class.forName("com.mysql.cj.Addname.Driver");
+            connection connections DriverManager.getConnection(url.username.password);
+
+            Statement statement=connection.createStatement();
+            ResultSet resultset=statement.executeQuery(sql"select*from Addstudent");
+            while(resultSet.next()){
+                System.out.println(resultSet.getString(columnindex 1).resultSet.getInt(columnindex 2));
+                
+            }
+            connection.close();
+        }
+        catch (Exception e){
+        System.out.println(e);
+        }   
+     }
+}
